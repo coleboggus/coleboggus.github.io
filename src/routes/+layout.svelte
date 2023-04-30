@@ -1,18 +1,17 @@
-<script>
-	import Header from './Header.svelte';
+<script lang="ts">
 	import './styles.css';
+	import Scene from '$lib/components/Scene.svelte';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <div class="app">
+	<div class="scene-container">
+		<Scene />
+	</div>
 	<Header />
-
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
 </div>
 
 <style>

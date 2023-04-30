@@ -1,9 +1,14 @@
+<script>
+	import profile from '$lib/images/profile.jpg';
+</script>
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="text-column">
+<section>
+	<img class="profile" src={profile} alt="Cole Boggus Profile" />
 	<h1>About this app</h1>
 
 	<p>
@@ -23,4 +28,17 @@
 		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
 		using it with JavaScript disabled!
 	</p>
-</div>
+</section>
+
+<style>
+	section {
+		max-width: 1200px;
+		padding: 100px;
+		margin: 2rem auto;
+	}
+	.profile {
+		filter: glow(0.5rem 0.5rem 0.5rem #000);
+
+		max-width: 400px;
+	}
+</style>

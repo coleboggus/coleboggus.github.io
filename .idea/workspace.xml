@@ -4,20 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="155f8d26-90c3-4b37-a7bd-dd930d5328c2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+    <list default="true" id="155f8d26-90c3-4b37-a7bd-dd930d5328c2" name="Changes" comment="Moving to SvelteKit and overhaul">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coleboggus.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/resume.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/resume.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/c++.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/img/critter slayer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/images/profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/resume.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/resume.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_bootstrap-overrides.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_global.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_mixins.scss" beforeDir="false" />
@@ -25,6 +28,22 @@
       <change beforePath="$PROJECT_DIR$/scss/_resume-item.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_variables.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/resume.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/images/svelte-welcome.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/images/svelte-welcome.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Counter.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Header.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/+page.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/game.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/game.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/how-to-play/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/how-to-play/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/reduced-motion.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sverdle/words.server.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
@@ -89,48 +108,79 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scene" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="sveltekit" />
+                    <option name="lastUsedInstant" value="1682800592" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1682800591" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2FbHz3ZlHK4A671smiSeWkNuDfR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\nx\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Vert/IdeaProjects/coleboggus.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\node_modules\\prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\website\src\assets" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="coleboggus.github.io" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="coleboggus.github.io" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,7 +197,18 @@
       <workItem from="1671076655115" duration="153000" />
       <workItem from="1671077037312" duration="14000" />
       <workItem from="1671077063732" duration="817000" />
+      <workItem from="1682800341575" duration="778000" />
+      <workItem from="1682802365877" duration="300000" />
+      <workItem from="1682803520806" duration="17081000" />
     </task>
+    <task id="LOCAL-00001" summary="Moving to SvelteKit and overhaul">
+      <created>1682800611200</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682800611200</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +224,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Moving to SvelteKit and overhaul" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving to SvelteKit and overhaul" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="YamllintSettings">
     <option name="binPath" value="yamllint" />
