@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@types/three": "^0.151.0",
 		"svelte-adapter-github": "^1.0.0-next.0",
 		"three": "^0.152.2"
