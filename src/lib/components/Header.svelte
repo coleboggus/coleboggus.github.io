@@ -9,22 +9,32 @@
 </script>
 
 <header class="header">
-	<a href="/" class="logo">Cole Boggus</a>
-	<div tabindex="0" class="sandwich-icon" on:click={toggleMenu} on:keydown={toggleMenu}>
-		<span>&#9776;</span>
+	<div class="fixed-width">
+		<a href="/" class="logo">Cole Boggus</a>
+		<div tabindex="0" class="sandwich-icon" on:click={toggleMenu} on:keydown={toggleMenu}>
+			<span>&#9776;</span>
+		</div>
+
+		<nav class="menu {showMenu ? 'show' : ''}">
+			<a href="/about" class="nav-link">About</a>
+			<a href="/doodles" class="nav-link">Code Doodles</a>
+			<a href="/designs" class="nav-link">Designs</a>
+		</nav>
+		<Toggle store={isThreejsRunning}>3D</Toggle>
 	</div>
-	<Toggle store={isThreejsRunning}>3D</Toggle>
-	<nav class="menu {showMenu ? 'show' : ''}">
-		<a href="/about" class="nav-link">About</a>
-		<a href="/doodles" class="nav-link">Code Doodles</a>
-	</nav>
 </header>
 
 <style>
-	.header {
+	.fixed-width {
+		max-width: 1200px;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin: 0 auto;
+	}
+	.header {
+		display: flex;
 		background-color: #333;
 		padding: 10px;
 	}
@@ -33,10 +43,17 @@
 		color: white;
 		font-size: 24px;
 		text-decoration: none;
+		transition: .4s;
 	}
 
 	.menu {
-		display: none;
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0 40px;
+	}
+
+	.nav-link:hover {
+		border-color: #333;
 	}
 
 	.sandwich-icon {
@@ -48,11 +65,19 @@
 		display: flex;
 		gap: 15px;
 	}
+	a{
+		color: white;
+		transition: .4s;
+		text-decoration: underline;
+	}
+
 
 	.nav-link,
-	span {
-		color: white;
-		text-decoration: none;
+	span{
+
+	}
+	a:hover{
+		color:#FDBA3b;
 	}
 
 	/* Media query for mobile devices */

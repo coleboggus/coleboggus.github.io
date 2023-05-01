@@ -1,8 +1,6 @@
 <script>
     import profile from '$lib/images/profile.jpg';
     import OptionRow from '$lib/components/OptionRow.svelte';
-
-    let selected = 'Experience';
 </script>
 
 <svelte:head>
@@ -37,7 +35,7 @@
         background-color: #555;
     }
     section {
-        max-width: 1200px;
+        max-width: 80vw;
         width: 1200px;
         max-height: 70vh;
         overflow-y: auto;

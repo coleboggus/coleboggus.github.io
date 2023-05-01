@@ -46,8 +46,9 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: #ccc;
-		transition: 0.4s;
+		background-color: #777;
+		transition: background-color .4s;
+		transition-delay: .3s;
 	}
 
 	.slider:before {
@@ -57,12 +58,12 @@
 		width: 26px;
 		left: 4px;
 		bottom: 4px;
-		background-color: white;
+		background-color: #fdba3b;
 		transition: 0.4s;
 	}
 
 	input:checked + .slider {
-		background-color: #2196f3;
+		background-color: maroon;
 	}
 
 	input:checked + .slider:before {
