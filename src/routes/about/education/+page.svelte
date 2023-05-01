@@ -1,0 +1,1 @@
+<p>I graduated from Texas A&M University with a degree in Computer Science and a minor in Business.</p>

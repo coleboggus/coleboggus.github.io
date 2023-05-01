@@ -9,7 +9,7 @@
 </script>
 
 <header class="header">
-	<a href="/" class="logo">Your Logo</a>
+	<a href="/" class="logo">Cole Boggus</a>
 	<div tabindex="0" class="sandwich-icon" on:click={toggleMenu} on:keydown={toggleMenu}>
 		<span>&#9776;</span>
 	</div>
