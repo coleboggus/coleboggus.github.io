@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="155f8d26-90c3-4b37-a7bd-dd930d5328c2" name="Changes" comment="add workflow">
+    <list default="true" id="155f8d26-90c3-4b37-a7bd-dd930d5328c2" name="Changes" comment="Layout improvements + error pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Header.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Toggle.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Toggle.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/doodles/+page.svelte" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +21,9 @@
         <option value="Toggle.svelte" />
         <option value="+page" />
         <option value="OptionRow" />
-        <option value="+page.svelte" />
         <option value="+layout.svelte" />
         <option value="+error" />
+        <option value="+page.svelte" />
       </list>
     </option>
   </component>
@@ -73,31 +70,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vert/IdeaProjects/coleboggus.github.io&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\node_modules\\prettier&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Vert/IdeaProjects/coleboggus.github.io/src/routes/doodles",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\node_modules\\prettier",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\Vert\\IdeaProjects\\coleboggus.github.io\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\src\routes\doodles" />
       <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\src\routes\about\skills" />
       <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\src\routes\about\education" />
       <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\src\routes\not-found" />
-      <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\src\routes\doodles" />
       <recent name="C:\Users\Vert\IdeaProjects\coleboggus.github.io\src\lib\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -123,7 +120,7 @@
       <workItem from="1682800341575" duration="778000" />
       <workItem from="1682802365877" duration="300000" />
       <workItem from="1682803520806" duration="40532000" />
-      <workItem from="1682971401032" duration="2235000" />
+      <workItem from="1682971401032" duration="2392000" />
     </task>
     <task id="LOCAL-00001" summary="Moving to SvelteKit and overhaul">
       <created>1682800611200</created>
@@ -181,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682922816619</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Layout improvements + error pages">
+      <created>1682981826667</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682981826667</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +206,8 @@
     <MESSAGE value="Moving to SvelteKit and overhaul" />
     <MESSAGE value="Sveltekit basis established" />
     <MESSAGE value="add workflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="add workflow" />
+    <MESSAGE value="Layout improvements + error pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout improvements + error pages" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
