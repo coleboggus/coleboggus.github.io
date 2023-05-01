@@ -1,13 +1,16 @@
 <script lang="ts">
 	import './styles.css';
-	import Scene from '$lib/components/Scene.svelte';
+	import Background from '$lib/components/Background.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import isThreejsRunning from '../stores/threeStores';
 </script>
 
 <div class="app">
-	<div class="scene-container">
-		<Scene />
-	</div>
+	{#if $isThreejsRunning}
+		<div class="scene-container">
+			<Background />
+		</div>
+	{/if}
 	<Header />
 	<main>
 		<slot />
@@ -19,6 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		overflow: initial;
 	}
 
 	main {

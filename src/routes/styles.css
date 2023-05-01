@@ -14,20 +14,14 @@
 	--column-margin-top: 4rem;
 	font-family: var(--font-body);
 	color: var(--color-text);
+	font-size: 22px;
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-attachment: fixed;
 	background-color: var(--color-bg-1);
-	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(51, 31, 31, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+	overflow: hidden;
 }
 
 h1,
@@ -117,11 +111,12 @@ button:focus:not(:focus-visible) {
 }
 
 section {
+	margin-top: 2rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	flex: 0.6;
-	background: rgba(0.7, 0.7, 0.7, 0.7);
+	background: rgba(0.7, 0.7, 0.7, 0.9);
 	color: white;
+	border: 1px solid #fdba3bcc;
 }
