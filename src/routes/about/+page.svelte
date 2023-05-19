@@ -3,6 +3,6 @@
     import {goto} from "$app/navigation";
 
     onMount(() => {
-        goto('about/education');
+        goto('about/experience');
     });
 </script>
